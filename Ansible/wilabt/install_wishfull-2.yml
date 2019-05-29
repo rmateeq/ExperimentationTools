@@ -3,10 +3,12 @@
   tasks:
     - name: Install requirements for WiSHFUL
       become: true
-      pkg:
-      - wget
-      - git
-      - python3-pip
+      apt:
+        state=present
+        pkg:
+        - wget
+        - git
+        - python3-pip
 
     - name: Make root dir writable
       become: true
