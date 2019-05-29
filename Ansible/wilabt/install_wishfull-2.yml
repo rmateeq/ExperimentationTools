@@ -60,8 +60,7 @@
         regexp: '\.'
         replace: '/root/wishful'
 
-    - name: 
-    requirements
+    - name: requirements
       become: true
       pip:
         requirements: /root/wishful/.repo/manifests/requirements.txt
