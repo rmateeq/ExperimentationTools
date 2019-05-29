@@ -4,7 +4,7 @@
     - name: Install requirements for WiSHFUL
       become: true
       apt:
-        state=present
+        state: present
         pkg:
         - wget
         - git
