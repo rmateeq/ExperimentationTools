@@ -8,6 +8,7 @@
       - wget
       - git
       - python3-pip
+      - python-serial
 
     - name: Make root dir writable
       become: true
